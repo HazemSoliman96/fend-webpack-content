@@ -1,1 +1,1 @@
-alert("I Exist");
+(()=>{"use strict";alert("I Exist"),console.log((function(e){e.preventDefault();let t=document.getElementById("name").value;checkForName(t),console.log("::: Form Submitted :::"),fetch("http://localhost:8080/test").then((e=>e.json())).then((function(e){document.getElementById("results").innerHTML=e.message}))})),console.log((function(e){console.log("::: Running checkForName :::",e),["Picard","Janeway","Kirk","Archer","Georgiou"].includes(e)&&alert("Welcome, Captain!")}))})();
